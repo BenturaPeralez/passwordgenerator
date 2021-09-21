@@ -117,19 +117,19 @@ function generatePassword () {
     // concatenate lowerCasedChars to chosenCharacters
     chosenCharacters = chosenCharacters.concat (lowerCasedChars);
   }
- if (caseTypenumber == true) { 
+ if (caseTypenumber === true) { 
    chosenCharacters = chosenCharacters.concat (numericChars);
  }
 
- if (caseTypeupper == true) {
+ if (caseTypeupper === true) {
    chosenCharacters = chosenCharacters.concat (upperCasedChars);
  }
 
- if ( caseTypespecial == true) {
+ if ( caseTypespecial === true) {
    chosenCharacters = chosenCharacters.concat (specialChars);
  }
 
  var randIndex = Math.floor(Math.random() * arr.length); var randElement = arr[randIndex];
 }
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword)}}
+generateBtn.addEventListener("click", writePassword)
