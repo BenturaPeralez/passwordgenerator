@@ -128,8 +128,13 @@ function generatePassword () {
  if ( caseTypespecial === true) {
    chosenCharacters = chosenCharacters.concat (specialChars);
  }
-
- var randIndex = Math.floor(Math.random() * arr.length); var randElement = arr[randIndex];
+ 
+ var password = "";
+  for (let i = 0; i < Number(length); i++) {
+    var randIndex = Math.floor(Math.random() * chosenCharacters.length);
+    password = password + chosenCharacters[randIndex];
+  }
+  return password;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword)
