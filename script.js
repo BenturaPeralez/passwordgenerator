@@ -116,7 +116,7 @@ function generatePassword () {
   if ( caseTypelower === true) {
     // concatenate lowerCasedChars to chosenCharacters
     chosenCharacters = chosenCharacters.concat (lowerCasedChars);
-
+  }
  if (caseTypenumber == true) { 
    chosenCharacters = chosenCharacters.concat (numericChars);
  }
@@ -130,6 +130,6 @@ function generatePassword () {
  }
 
  var randIndex = Math.floor(Math.random() * arr.length); var randElement = arr[randIndex];
-
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword)}}
